@@ -1,0 +1,71 @@
+PODS:
+  - Alamofire (5.0.0.beta.1)
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - Charts (3.2.1):
+    - Charts/Core (= 3.2.1)
+  - Charts/Core (3.2.1)
+  - FBSDKCoreKit (4.39.1):
+    - Bolts (~> 1.9)
+  - FBSDKLoginKit (4.39.1):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.39.1):
+    - FBSDKCoreKit
+  - Stripe (14.0.0)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - Alamofire (from `https://github.com/Alamofire/Alamofire.git`)
+  - Charts (from `https://github.com/danielgindi/Charts.git`, branch `master`)
+  - FBSDKCoreKit
+  - FBSDKLoginKit
+  - FBSDKShareKit
+  - Stripe
+  - SwiftyJSON (from `https://github.com/BaiduHIDeviOS/SwiftyJSON.git`, branch `swift3`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Bolts
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - FBSDKShareKit
+    - Stripe
+
+EXTERNAL SOURCES:
+  Alamofire:
+    :git: https://github.com/Alamofire/Alamofire.git
+  Charts:
+    :branch: master
+    :git: https://github.com/danielgindi/Charts.git
+  SwiftyJSON:
+    :branch: swift3
+    :git: https://github.com/BaiduHIDeviOS/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  Alamofire:
+    :commit: 8ab8a2b537ce94ff7ef9117df087f8c6d8f8c088
+    :git: https://github.com/Alamofire/Alamofire.git
+  Charts:
+    :commit: 8d38438c13969b7a5c6e2194b500defd46fc436d
+    :git: https://github.com/danielgindi/Charts.git
+  SwiftyJSON:
+    :commit: de5dc3b1b421805769590d331178551bbb0e5733
+    :git: https://github.com/BaiduHIDeviOS/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  Alamofire: 2ef6d6c984c5d21c366e9b41a9ae7dfee2b67a44
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
+  FBSDKCoreKit: f442aa96179cc9b382bb4abeb7e340a47cca8f91
+  FBSDKLoginKit: c3079d9a4db27c492287b1eed7a4272b28cf8a59
+  FBSDKShareKit: 27d7b982e7b1f4638da2f2b1ab6eba5afc6b5888
+  Stripe: db29ad197c74aca6fb981e4e8355cf7ebd0fca5a
+  SwiftyJSON: 6118fb49d7519c4d31a0c1f3d5af936e9047b556
+
+PODFILE CHECKSUM: 2751b7e96ed7e7307a05e8dbbcc86aa16dac39b5
+
+COCOAPODS: 1.5.3

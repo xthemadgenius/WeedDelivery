@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		652FB78B3DCB33368D96024B /* Pods_WeedConnectMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 775A0833946A99BDB1870B93 /* Pods_WeedConnectMobile.framework */; };
+		9D08A9D521F534B400C056C5 /* Dispensary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D08A9D421F534B400C056C5 /* Dispensary.swift */; };
+		9D08A9D721F53D4D00C056C5 /* DispensaryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D08A9D621F53D4D00C056C5 /* DispensaryViewCell.swift */; };
+		9D08A9D921F5A73000C056C5 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D08A9D821F5A73000C056C5 /* Product.swift */; };
+		9D08A9DB21F5A97800C056C5 /* ProductViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D08A9DA21F5A97800C056C5 /* ProductViewCell.swift */; };
+		9D27426621F26A9300B2DDD8 /* FBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D27426521F26A9300B2DDD8 /* FBManager.swift */; };
+		9D27426821F277EE00B2DDD8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D27426721F277EE00B2DDD8 /* LoginViewController.swift */; };
+		9D27426A21F2AE1E00B2DDD8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D27426921F2AE1E00B2DDD8 /* User.swift */; };
+		9D2B02B521F6569300A196C0 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2B02B421F6569300A196C0 /* Helpers.swift */; };
+		9D300B5121F0894300081073 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D300B5021F0894300081073 /* MapKit.framework */; };
+		9D300B5321F10A4800081073 /* TrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D300B5221F10A4800081073 /* TrayViewController.swift */; };
+		9D3B79C421F7A5E1001F8AB5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3B79C321F7A5E1001F8AB5 /* CoreLocation.framework */; };
+		9D3CE56621F836AC006980B1 /* OrderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3CE56521F836AC006980B1 /* OrderViewCell.swift */; };
+		9D52F21421EF2BCB0065CC92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52F21321EF2BCB0065CC92 /* AppDelegate.swift */; };
+		9D52F21921EF2BCB0065CC92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D52F21721EF2BCB0065CC92 /* Main.storyboard */; };
+		9D52F21B21EF2BCD0065CC92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D52F21A21EF2BCD0065CC92 /* Assets.xcassets */; };
+		9D52F21E21EF2BCD0065CC92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D52F21C21EF2BCD0065CC92 /* LaunchScreen.storyboard */; };
+		9D52F22821EF36350065CC92 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D52F22721EF36350065CC92 /* SWRevealViewController.m */; };
+		9D67450021F6E45B00934E18 /* Tray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6744FF21F6E45B00934E18 /* Tray.swift */; };
+		9D67450221F71EEB00934E18 /* TrayViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67450121F71EEB00934E18 /* TrayViewCell.swift */; };
+		9D766C1F21EFFA1000004B6A /* DispensaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D766C1E21EFFA1000004B6A /* DispensaryViewController.swift */; };
+		9D766C2121F0039700004B6A /* CustomerMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D766C2021F0039700004B6A /* CustomerMenuTableViewController.swift */; };
+		9D766C2321F05E5B00004B6A /* ProductListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D766C2221F05E5B00004B6A /* ProductListTableViewController.swift */; };
+		9D766C2521F0702C00004B6A /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D766C2421F0702C00004B6A /* ProductDetailsViewController.swift */; };
+		9D7ED17421F908AE00457FA1 /* DriverOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7ED17321F908AE00457FA1 /* DriverOrdersViewController.swift */; };
+		9D7ED17C21F9126100457FA1 /* DriverMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7ED17B21F9126100457FA1 /* DriverMenuViewController.swift */; };
+		9D7ED17E21F94AF400457FA1 /* DeliveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7ED17D21F94AF400457FA1 /* DeliveryViewController.swift */; };
+		9D7ED18021F9761900457FA1 /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7ED17F21F9761900457FA1 /* StatisticViewController.swift */; };
+		9D7ED18221F97D8C00457FA1 /* DriverOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7ED18121F97D8C00457FA1 /* DriverOrder.swift */; };
+		9D7ED18421F981C900457FA1 /* DriverOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7ED18321F981C900457FA1 /* DriverOrderCell.swift */; };
+		9D8A2FD021F1A97E00F8A239 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8A2FCF21F1A97E00F8A239 /* PaymentViewController.swift */; };
+		9D8A2FD221F1C00100F8A239 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8A2FD121F1C00100F8A239 /* OrderViewController.swift */; };
+		9DBBBDD821F3AF3900CC9E92 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBBBDD721F3AF3900CC9E92 /* APIManager.swift */; };
+		9DBBBDDA21F3BB7600CC9E92 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBBBDD921F3BB7600CC9E92 /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		187D32F8709D981534D49D9C /* Pods-WeedConnectMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeedConnectMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeedConnectMobile/Pods-WeedConnectMobile.debug.xcconfig"; sourceTree = "<group>"; };
+		775A0833946A99BDB1870B93 /* Pods_WeedConnectMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeedConnectMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D08A9D421F534B400C056C5 /* Dispensary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispensary.swift; sourceTree = "<group>"; };
+		9D08A9D621F53D4D00C056C5 /* DispensaryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispensaryViewCell.swift; sourceTree = "<group>"; };
+		9D08A9D821F5A73000C056C5 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		9D08A9DA21F5A97800C056C5 /* ProductViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewCell.swift; sourceTree = "<group>"; };
+		9D27426421F2663000B2DDD8 /* WeedConnectMobile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeedConnectMobile.entitlements; sourceTree = "<group>"; };
+		9D27426521F26A9300B2DDD8 /* FBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBManager.swift; sourceTree = "<group>"; };
+		9D27426721F277EE00B2DDD8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9D27426921F2AE1E00B2DDD8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9D2B02B421F6569300A196C0 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		9D300B5021F0894300081073 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9D300B5221F10A4800081073 /* TrayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrayViewController.swift; sourceTree = "<group>"; };
+		9D3B79C321F7A5E1001F8AB5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9D3CE56521F836AC006980B1 /* OrderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewCell.swift; sourceTree = "<group>"; };
+		9D52F21021EF2BCB0065CC92 /* WeedConnectMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeedConnectMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D52F21321EF2BCB0065CC92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9D52F21821EF2BCB0065CC92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9D52F21A21EF2BCD0065CC92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D52F21D21EF2BCD0065CC92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9D52F21F21EF2BCD0065CC92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D52F22521EF36350065CC92 /* WeedConnectMobile-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeedConnectMobile-Bridging-Header.h"; sourceTree = "<group>"; };
+		9D52F22621EF36350065CC92 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		9D52F22721EF36350065CC92 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		9D6744FF21F6E45B00934E18 /* Tray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tray.swift; sourceTree = "<group>"; };
+		9D67450121F71EEB00934E18 /* TrayViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrayViewCell.swift; sourceTree = "<group>"; };
+		9D766C1E21EFFA1000004B6A /* DispensaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispensaryViewController.swift; sourceTree = "<group>"; };
+		9D766C2021F0039700004B6A /* CustomerMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerMenuTableViewController.swift; sourceTree = "<group>"; };
+		9D766C2221F05E5B00004B6A /* ProductListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListTableViewController.swift; sourceTree = "<group>"; };
+		9D766C2421F0702C00004B6A /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
+		9D7ED17321F908AE00457FA1 /* DriverOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverOrdersViewController.swift; sourceTree = "<group>"; };
+		9D7ED17B21F9126100457FA1 /* DriverMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverMenuViewController.swift; sourceTree = "<group>"; };
+		9D7ED17D21F94AF400457FA1 /* DeliveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryViewController.swift; sourceTree = "<group>"; };
+		9D7ED17F21F9761900457FA1 /* StatisticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticViewController.swift; sourceTree = "<group>"; };
+		9D7ED18121F97D8C00457FA1 /* DriverOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverOrder.swift; sourceTree = "<group>"; };
+		9D7ED18321F981C900457FA1 /* DriverOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverOrderCell.swift; sourceTree = "<group>"; };
+		9D8A2FCF21F1A97E00F8A239 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		9D8A2FD121F1C00100F8A239 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		9DBBBDD721F3AF3900CC9E92 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		9DBBBDD921F3BB7600CC9E92 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E84ACB35F93B6B25AAEC9E61 /* Pods-WeedConnectMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeedConnectMobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeedConnectMobile/Pods-WeedConnectMobile.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D52F20D21EF2BCB0065CC92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D3B79C421F7A5E1001F8AB5 /* CoreLocation.framework in Frameworks */,
+				9D300B5121F0894300081073 /* MapKit.framework in Frameworks */,
+				652FB78B3DCB33368D96024B /* Pods_WeedConnectMobile.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32BEF82406390F86A12C32E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				187D32F8709D981534D49D9C /* Pods-WeedConnectMobile.debug.xcconfig */,
+				E84ACB35F93B6B25AAEC9E61 /* Pods-WeedConnectMobile.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9D300B4F21F0894300081073 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D3B79C321F7A5E1001F8AB5 /* CoreLocation.framework */,
+				9D300B5021F0894300081073 /* MapKit.framework */,
+				775A0833946A99BDB1870B93 /* Pods_WeedConnectMobile.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D52F20721EF2BCB0065CC92 = {
+			isa = PBXGroup;
+			children = (
+				9D52F21221EF2BCB0065CC92 /* WeedConnectMobile */,
+				9D52F21121EF2BCB0065CC92 /* Products */,
+				9D300B4F21F0894300081073 /* Frameworks */,
+				32BEF82406390F86A12C32E2 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		9D52F21121EF2BCB0065CC92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D52F21021EF2BCB0065CC92 /* WeedConnectMobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D52F21221EF2BCB0065CC92 /* WeedConnectMobile */ = {
+			isa = PBXGroup;
+			children = (
+				9DBBBDD621F3AB7900CC9E92 /* Manager */,
+				9DBBBDD521F3AB5A00CC9E92 /* Controller */,
+				9DBBBDD421F3AB2900CC9E92 /* View */,
+				9DBBBDD321F3AAE000CC9E92 /* Model */,
+				9D27426421F2663000B2DDD8 /* WeedConnectMobile.entitlements */,
+				9D52F22921EF364A0065CC92 /* Lib */,
+				9D52F21321EF2BCB0065CC92 /* AppDelegate.swift */,
+				9D52F21721EF2BCB0065CC92 /* Main.storyboard */,
+				9D52F21A21EF2BCD0065CC92 /* Assets.xcassets */,
+				9D52F21C21EF2BCD0065CC92 /* LaunchScreen.storyboard */,
+				9D52F21F21EF2BCD0065CC92 /* Info.plist */,
+				9D52F22521EF36350065CC92 /* WeedConnectMobile-Bridging-Header.h */,
+			);
+			path = WeedConnectMobile;
+			sourceTree = "<group>";
+		};
+		9D52F22921EF364A0065CC92 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				9D52F22621EF36350065CC92 /* SWRevealViewController.h */,
+				9D52F22721EF36350065CC92 /* SWRevealViewController.m */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		9D7ED17521F9106B00457FA1 /* Driver */ = {
+			isa = PBXGroup;
+			children = (
+				9D7ED17321F908AE00457FA1 /* DriverOrdersViewController.swift */,
+				9D7ED17B21F9126100457FA1 /* DriverMenuViewController.swift */,
+				9D7ED17D21F94AF400457FA1 /* DeliveryViewController.swift */,
+				9D7ED17F21F9761900457FA1 /* StatisticViewController.swift */,
+			);
+			path = Driver;
+			sourceTree = "<group>";
+		};
+		9D7ED17621F9107700457FA1 /* Customer */ = {
+			isa = PBXGroup;
+			children = (
+				9D27426721F277EE00B2DDD8 /* LoginViewController.swift */,
+				9D766C1E21EFFA1000004B6A /* DispensaryViewController.swift */,
+				9D766C2021F0039700004B6A /* CustomerMenuTableViewController.swift */,
+				9D766C2221F05E5B00004B6A /* ProductListTableViewController.swift */,
+				9D766C2421F0702C00004B6A /* ProductDetailsViewController.swift */,
+				9D300B5221F10A4800081073 /* TrayViewController.swift */,
+				9D8A2FCF21F1A97E00F8A239 /* PaymentViewController.swift */,
+				9D8A2FD121F1C00100F8A239 /* OrderViewController.swift */,
+			);
+			path = Customer;
+			sourceTree = "<group>";
+		};
+		9D7ED17721F9110600457FA1 /* Driver */ = {
+			isa = PBXGroup;
+			children = (
+				9D7ED18321F981C900457FA1 /* DriverOrderCell.swift */,
+			);
+			path = Driver;
+			sourceTree = "<group>";
+		};
+		9D7ED17821F9111700457FA1 /* Customer */ = {
+			isa = PBXGroup;
+			children = (
+				9D08A9D621F53D4D00C056C5 /* DispensaryViewCell.swift */,
+				9D08A9DA21F5A97800C056C5 /* ProductViewCell.swift */,
+				9D67450121F71EEB00934E18 /* TrayViewCell.swift */,
+				9D3CE56521F836AC006980B1 /* OrderViewCell.swift */,
+			);
+			path = Customer;
+			sourceTree = "<group>";
+		};
+		9D7ED17921F9116C00457FA1 /* Driver */ = {
+			isa = PBXGroup;
+			children = (
+				9D7ED18121F97D8C00457FA1 /* DriverOrder.swift */,
+			);
+			path = Driver;
+			sourceTree = "<group>";
+		};
+		9D7ED17A21F9117600457FA1 /* Customer */ = {
+			isa = PBXGroup;
+			children = (
+				9D27426921F2AE1E00B2DDD8 /* User.swift */,
+				9D08A9D421F534B400C056C5 /* Dispensary.swift */,
+				9D08A9D821F5A73000C056C5 /* Product.swift */,
+				9D6744FF21F6E45B00934E18 /* Tray.swift */,
+			);
+			path = Customer;
+			sourceTree = "<group>";
+		};
+		9DBBBDD321F3AAE000CC9E92 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D7ED17A21F9117600457FA1 /* Customer */,
+				9D7ED17921F9116C00457FA1 /* Driver */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9DBBBDD421F3AB2900CC9E92 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D7ED17821F9111700457FA1 /* Customer */,
+				9D7ED17721F9110600457FA1 /* Driver */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9DBBBDD521F3AB5A00CC9E92 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9D7ED17621F9107700457FA1 /* Customer */,
+				9D7ED17521F9106B00457FA1 /* Driver */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9DBBBDD621F3AB7900CC9E92 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				9D27426521F26A9300B2DDD8 /* FBManager.swift */,
+				9DBBBDD721F3AF3900CC9E92 /* APIManager.swift */,
+				9DBBBDD921F3BB7600CC9E92 /* Constants.swift */,
+				9D2B02B421F6569300A196C0 /* Helpers.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D52F20F21EF2BCB0065CC92 /* WeedConnectMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D52F22221EF2BCD0065CC92 /* Build configuration list for PBXNativeTarget "WeedConnectMobile" */;
+			buildPhases = (
+				B187BDE59D18042136A9857E /* [CP] Check Pods Manifest.lock */,
+				9D52F20C21EF2BCB0065CC92 /* Sources */,
+				9D52F20D21EF2BCB0065CC92 /* Frameworks */,
+				9D52F20E21EF2BCB0065CC92 /* Resources */,
+				C71FD79EFFD50FF6540B361D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeedConnectMobile;
+			productName = WeedConnectMobile;
+			productReference = 9D52F21021EF2BCB0065CC92 /* WeedConnectMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D52F20821EF2BCB0065CC92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Weed Coonect";
+				TargetAttributes = {
+					9D52F20F21EF2BCB0065CC92 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 9D52F20B21EF2BCB0065CC92 /* Build configuration list for PBXProject "WeedConnectMobile" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D52F20721EF2BCB0065CC92;
+			productRefGroup = 9D52F21121EF2BCB0065CC92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D52F20F21EF2BCB0065CC92 /* WeedConnectMobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D52F20E21EF2BCB0065CC92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D52F21E21EF2BCD0065CC92 /* LaunchScreen.storyboard in Resources */,
+				9D52F21B21EF2BCD0065CC92 /* Assets.xcassets in Resources */,
+				9D52F21921EF2BCB0065CC92 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B187BDE59D18042136A9857E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeedConnectMobile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C71FD79EFFD50FF6540B361D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WeedConnectMobile/Pods-WeedConnectMobile-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeedConnectMobile/Pods-WeedConnectMobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D52F20C21EF2BCB0065CC92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D7ED18421F981C900457FA1 /* DriverOrderCell.swift in Sources */,
+				9D08A9D721F53D4D00C056C5 /* DispensaryViewCell.swift in Sources */,
+				9D3CE56621F836AC006980B1 /* OrderViewCell.swift in Sources */,
+				9D67450221F71EEB00934E18 /* TrayViewCell.swift in Sources */,
+				9D2B02B521F6569300A196C0 /* Helpers.swift in Sources */,
+				9D27426A21F2AE1E00B2DDD8 /* User.swift in Sources */,
+				9D08A9DB21F5A97800C056C5 /* ProductViewCell.swift in Sources */,
+				9D27426821F277EE00B2DDD8 /* LoginViewController.swift in Sources */,
+				9D67450021F6E45B00934E18 /* Tray.swift in Sources */,
+				9D766C2521F0702C00004B6A /* ProductDetailsViewController.swift in Sources */,
+				9D7ED17C21F9126100457FA1 /* DriverMenuViewController.swift in Sources */,
+				9D27426621F26A9300B2DDD8 /* FBManager.swift in Sources */,
+				9D08A9D921F5A73000C056C5 /* Product.swift in Sources */,
+				9D8A2FD221F1C00100F8A239 /* OrderViewController.swift in Sources */,
+				9D300B5321F10A4800081073 /* TrayViewController.swift in Sources */,
+				9D766C2121F0039700004B6A /* CustomerMenuTableViewController.swift in Sources */,
+				9D52F21421EF2BCB0065CC92 /* AppDelegate.swift in Sources */,
+				9D08A9D521F534B400C056C5 /* Dispensary.swift in Sources */,
+				9D766C1F21EFFA1000004B6A /* DispensaryViewController.swift in Sources */,
+				9D52F22821EF36350065CC92 /* SWRevealViewController.m in Sources */,
+				9DBBBDD821F3AF3900CC9E92 /* APIManager.swift in Sources */,
+				9D7ED17421F908AE00457FA1 /* DriverOrdersViewController.swift in Sources */,
+				9D7ED18021F9761900457FA1 /* StatisticViewController.swift in Sources */,
+				9DBBBDDA21F3BB7600CC9E92 /* Constants.swift in Sources */,
+				9D7ED17E21F94AF400457FA1 /* DeliveryViewController.swift in Sources */,
+				9D8A2FD021F1A97E00F8A239 /* PaymentViewController.swift in Sources */,
+				9D766C2321F05E5B00004B6A /* ProductListTableViewController.swift in Sources */,
+				9D7ED18221F97D8C00457FA1 /* DriverOrder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9D52F21721EF2BCB0065CC92 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D52F21821EF2BCB0065CC92 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9D52F21C21EF2BCD0065CC92 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D52F21D21EF2BCD0065CC92 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D52F22021EF2BCD0065CC92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D52F22121EF2BCD0065CC92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D52F22321EF2BCD0065CC92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 187D32F8709D981534D49D9C /* Pods-WeedConnectMobile.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = WeedConnectMobile/WeedConnectMobile.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VYD5K6JF68;
+				INFOPLIST_FILE = WeedConnectMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = guru.weedconnect.WeedConnectMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WeedConnectMobile/WeedConnectMobile-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D52F22421EF2BCD0065CC92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E84ACB35F93B6B25AAEC9E61 /* Pods-WeedConnectMobile.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = WeedConnectMobile/WeedConnectMobile.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VYD5K6JF68;
+				INFOPLIST_FILE = WeedConnectMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = guru.weedconnect.WeedConnectMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WeedConnectMobile/WeedConnectMobile-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D52F20B21EF2BCB0065CC92 /* Build configuration list for PBXProject "WeedConnectMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D52F22021EF2BCD0065CC92 /* Debug */,
+				9D52F22121EF2BCD0065CC92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D52F22221EF2BCD0065CC92 /* Build configuration list for PBXNativeTarget "WeedConnectMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D52F22321EF2BCD0065CC92 /* Debug */,
+				9D52F22421EF2BCD0065CC92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D52F20821EF2BCB0065CC92 /* Project object */;
+}

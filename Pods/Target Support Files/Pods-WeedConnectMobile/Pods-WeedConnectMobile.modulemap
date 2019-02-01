@@ -1,0 +1,6 @@
+framework module Pods_WeedConnectMobile {
+  umbrella header "Pods-WeedConnectMobile-umbrella.h"
+
+  export *
+  module * { export * }
+}
